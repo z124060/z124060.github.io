@@ -82,88 +82,88 @@ ul li {
 }
 
 .grow:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .shrink:hover {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
 }
 
 .pulse:hover {
-  animation: pulse 1s infinite;
+    animation: pulse 1s infinite;
 }
 
 @keyframes float {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
 }
 
 .float:hover {
-  animation: float 1.5s infinite;
+    animation: float 1.5s infinite;
 }
 
 @keyframes bob {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
-  100% { transform: translateY(0); }
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
 }
 
 .bob:hover {
-  animation: bob 1s infinite;
+    animation: bob 1s infinite;
 }
 
 .skew:hover {
-  transform: skew(-10deg);
+    transform: skew(-10deg);
 }
 
 .rotate:hover {
-  transform: rotate(15deg);
+    transform: rotate(15deg);
 }
 
 @keyframes jello {
-  0% { transform: scale(1) skewX(0); }
-  30% { transform: scale(1.25, 0.75) skewX(-25deg); }
-  40% { transform: scale(0.75, 1.25) skewX(25deg); }
-  50% { transform: scale(1.15, 0.85) skewX(-15deg); }
-  65% { transform: scale(.95, 1.05) skewX(5deg); }
-  75% { transform: scale(1.05, .95) skewX(-5deg); }
-  100% { transform: scale(1) skewX(0); }
+    0% { transform: scale(1) skewX(0); }
+    30% { transform: scale(1.25, 0.75) skewX(-25deg); }
+    40% { transform: scale(0.75, 1.25) skewX(25deg); }
+    50% { transform: scale(1.15, 0.85) skewX(-15deg); }
+    65% { transform: scale(.95, 1.05) skewX(5deg); }
+    75% { transform: scale(1.05, .95) skewX(-5deg); }
+    100% { transform: scale(1) skewX(0); }
 }
 
 .jello:hover {
-  animation: jello 0.9s ease-in-out;
+    animation: jello 0.9s ease-in-out;
 }
 
 @keyframes wobble {
-  0%, 100% { transform: translateX(0); }
-  15% { transform: translateX(-25%) rotate(-5deg); }
-  30% { transform: translateX(20%) rotate(3deg); }
-  45% { transform: translateX(-15%) rotate(-3deg); }
-  60% { transform: translateX(10%) rotate(2deg); }
-  75% { transform: translateX(-5%) rotate(-1deg); }
+    0%, 100% { transform: translateX(0); }
+    15% { transform: translateX(-25%) rotate(-5deg); }
+    30% { transform: translateX(20%) rotate(3deg); }
+    45% { transform: translateX(-15%) rotate(-3deg); }
+    60% { transform: translateX(10%) rotate(2deg); }
+    75% { transform: translateX(-5%) rotate(-1deg); }
 }
 
 .wobble:hover {
-  animation: wobble 1s ease-in-out;
+    animation: wobble 1s ease-in-out;
 }
 
 @keyframes swing {
-  20% { transform: rotate(15deg); }
-  40% { transform: rotate(-10deg); }
-  60% { transform: rotate(5deg); }
-  80% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+    20% { transform: rotate(15deg); }
+    40% { transform: rotate(-10deg); }
+    60% { transform: rotate(5deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
 }
 
 .swing:hover {
-  animation: swing 1s ease-in-out;
+    animation: swing 1s ease-in-out;
 }
 
 @keyframes wiggle {
@@ -190,260 +190,430 @@ ul li {
     50% { opacity: 0.25; }
 }
 
+section div:nth-child(3n+0):hover,
+section ul li:nth-child(3n+1):hover,
+section p:nth-child(3n+2):hover,
+section h1:nth-child(3n+3):hover,
+section h2:nth-child(3n+4):hover,
+section h3:nth-child(3n+5):hover,
+section h4:nth-child(3n+6):hover,
+section h5:nth-child(3n+7):hover,
+section h6:nth-child(3n+8):hover {
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-direction: alternate;
+}
 
-section div:hover,
-section ul li:hover,
-section p:hover,
-section h1:hover,
-section h2:hover,
-section h3:hover,
-section h4:hover,
-section h5:hover,
-section h6:hover {
+section div:nth-child(3n+1):hover,
+section ul li:nth-child(3n+2):hover,
+section p:nth-child(3n+3):hover,
+section h1:nth-child(3n+4):hover,
+section h2:nth-child(3n+5):hover,
+section h3:nth-child(3n+6):hover,
+section h4:nth-child(3n+7):hover,
+section h5:nth-child(3n+8):hover,
+section h6:nth-child(3n+9):hover {
     animation-duration: 1.25s;
     animation-timing-function: ease-in-out;
     animation-direction: reverse;
 }
 
+section div:nth-child(3n+2):hover,
+section ul li:nth-child(3n+3):hover,
+section p:nth-child(3n+4):hover,
+section h1:nth-child(3n+5):hover,
+section h2:nth-child(3n+6):hover,
+section h3:nth-child(3n+7):hover,
+section h4:nth-child(3n+8):hover,
+section h5:nth-child(3n+9):hover,
+section h6:nth-child(3n+10):hover {
+    animation-duration: 2.5s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate-reverse;
+}
+
 section div:nth-child(13n+0):hover,
-section ul li:nth-child(13n+0):hover,
-section span:nth-child(13n+0):hover,
-section p:nth-child(13n+0):hover,
-section h1:nth-child(13n+0):hover,
-section h2:nth-child(13n+0):hover,
-section h3:nth-child(13n+0):hover,
-section h4:nth-child(13n+0):hover,
-section h5:nth-child(13n+0):hover,
-section h6:nth-child(13n+0):hover {
+section ul li:nth-child(13n+1):hover,
+section span:nth-child(13n+2):hover,
+section p:nth-child(13n+3):hover,
+section h1:nth-child(13n+4):hover,
+section h2:nth-child(13n+5):hover,
+section h3:nth-child(13n+6):hover,
+section h4:nth-child(13n+7):hover,
+section h5:nth-child(13n+8):hover,
+section h6:nth-child(13n+9):hover {
     animation-name: fade;
 }
 
 section div:nth-child(13n+1):hover,
-section ul li:nth-child(13n+1):hover,
-section span:nth-child(13n+1):hover,
-section p:nth-child(13n+1):hover,
-section h1:nth-child(13n+1):hover,
-section h2:nth-child(13n+1):hover,
-section h3:nth-child(13n+1):hover,
-section h4:nth-child(13n+1):hover,
-section h5:nth-child(13n+1):hover,
-section h6:nth-child(13n+1):hover {
+section ul li:nth-child(13n+2):hover,
+section span:nth-child(13n+3):hover,
+section p:nth-child(13n+4):hover,
+section h1:nth-child(13n+5):hover,
+section h2:nth-child(13n+6):hover,
+section h3:nth-child(13n+7):hover,
+section h4:nth-child(13n+8):hover,
+section h5:nth-child(13n+9):hover,
+section h6:nth-child(13n+10):hover {
     animation-name: bounce;
 }
 
 section div:nth-child(13n+2):hover,
-section ul li:nth-child(13n+2):hover,
-section span:nth-child(13n+2):hover,
-section p:nth-child(13n+2):hover,
-section h1:nth-child(13n+2):hover,
-section h2:nth-child(13n+2):hover,
-section h3:nth-child(13n+2):hover,
-section h4:nth-child(13n+2):hover,
-section h5:nth-child(13n+2):hover,
-section h6:nth-child(13n+2):hover {
+section ul li:nth-child(13n+3):hover,
+section span:nth-child(13n+4):hover,
+section p:nth-child(13n+5):hover,
+section h1:nth-child(13n+6):hover,
+section h2:nth-child(13n+7):hover,
+section h3:nth-child(13n+8):hover,
+section h4:nth-child(13n+9):hover,
+section h5:nth-child(13n+10):hover,
+section h6:nth-child(13n+11):hover {
     animation-name: wiggle;
 }
 
 section div:nth-child(13n+3):hover,
-section ul li:nth-child(13n+3):hover,
-section span:nth-child(13n+3):hover,
-section p:nth-child(13n+3):hover,
-section h1:nth-child(13n+3):hover,
-section h2:nth-child(13n+3):hover,
-section h3:nth-child(13n+3):hover,
-section h4:nth-child(13n+3):hover,
-section h5:nth-child(13n+3):hover,
-section h6:nth-child(13n+3):hover {
+section ul li:nth-child(13n+4):hover,
+section span:nth-child(13n+5):hover,
+section p:nth-child(13n+6):hover,
+section h1:nth-child(13n+7):hover,
+section h2:nth-child(13n+8):hover,
+section h3:nth-child(13n+9):hover,
+section h4:nth-child(13n+10):hover,
+section h5:nth-child(13n+11):hover,
+section h6:nth-child(13n+12):hover {
     animation-name: grow;
 }
 
 section div:nth-child(13n+4):hover,
-section ul li:nth-child(13n+4):hover,
-section span:nth-child(13n+4):hover,
-section p:nth-child(13n+4):hover,
-section h1:nth-child(13n+4):hover,
-section h2:nth-child(13n+4):hover,
-section h3:nth-child(13n+4):hover,
-section h4:nth-child(13n+4):hover,
-section h5:nth-child(13n+4):hover,
-section h6:nth-child(13n+4):hover {
+section ul li:nth-child(13n+5):hover,
+section span:nth-child(13n+6):hover,
+section p:nth-child(13n+7):hover,
+section h1:nth-child(13n+8):hover,
+section h2:nth-child(13n+9):hover,
+section h3:nth-child(13n+10):hover,
+section h4:nth-child(13n+11):hover,
+section h5:nth-child(13n+12):hover,
+section h6:nth-child(13n+13):hover {
     animation-name: shirnk;
 }
 
 section div:nth-child(13n+5):hover,
-section ul li:nth-child(13n+5):hover,
-section span:nth-child(13n+5):hover,
-section p:nth-child(13n+5):hover,
-section h1:nth-child(13n+5):hover,
-section h2:nth-child(13n+5):hover,
-section h3:nth-child(13n+5):hover,
-section h4:nth-child(13n+5):hover,
-section h5:nth-child(13n+5):hover,
-section h6:nth-child(13n+5):hover {
+section ul li:nth-child(13n+6):hover,
+section span:nth-child(13n+7):hover,
+section p:nth-child(13n+8):hover,
+section h1:nth-child(13n+9):hover,
+section h2:nth-child(13n+10):hover,
+section h3:nth-child(13n+11):hover,
+section h4:nth-child(13n+12):hover,
+section h5:nth-child(13n+13):hover,
+section h6:nth-child(13n+14):hover {
     animation-name: swing;
 }
 
 section div:nth-child(13n+6):hover,
-section ul li:nth-child(13n+6):hover,
-section span:nth-child(13n+6):hover,
-section p:nth-child(13n+6):hover,
-section h1:nth-child(13n+6):hover,
-section h2:nth-child(13n+6):hover,
-section h3:nth-child(13n+6):hover,
-section h4:nth-child(13n+6):hover,
-section h5:nth-child(13n+6):hover,
-section h6:nth-child(13n+6):hover {
+section ul li:nth-child(13n+7):hover,
+section span:nth-child(13n+8):hover,
+section p:nth-child(13n+9):hover,
+section h1:nth-child(13n+10):hover,
+section h2:nth-child(13n+11):hover,
+section h3:nth-child(13n+12):hover,
+section h4:nth-child(13n+13):hover,
+section h5:nth-child(13n+14):hover,
+section h6:nth-child(13n+15):hover {
     animation-name: pulse;
 }
 
 section div:nth-child(13n+7):hover,
-section ul li:nth-child(13n+7):hover,
-section span:nth-child(13n+7):hover,
-section p:nth-child(13n+7):hover,
-section h1:nth-child(13n+7):hover,
-section h2:nth-child(13n+7):hover,
-section h3:nth-child(13n+7):hover,
-section h4:nth-child(13n+7):hover,
-section h5:nth-child(13n+7):hover,
-section h6:nth-child(13n+7):hover {
+section ul li:nth-child(13n+8):hover,
+section span:nth-child(13n+9):hover,
+section p:nth-child(13n+10):hover,
+section h1:nth-child(13n+11):hover,
+section h2:nth-child(13n+12):hover,
+section h3:nth-child(13n+13):hover,
+section h4:nth-child(13n+14):hover,
+section h5:nth-child(13n+15):hover,
+section h6:nth-child(13n+16):hover {
     animation-name: float;
 }
 
 section div:nth-child(13n+8):hover,
-section ul li:nth-child(13n+8):hover,
-section span:nth-child(13n+8):hover,
-section p:nth-child(13n+8):hover,
-section h1:nth-child(13n+8):hover,
-section h2:nth-child(13n+8):hover,
-section h3:nth-child(13n+8):hover,
-section h4:nth-child(13n+8):hover,
-section h5:nth-child(13n+8):hover,
-section h6:nth-child(13n+8):hover {
+section ul li:nth-child(13n+9):hover,
+section span:nth-child(13n+10):hover,
+section p:nth-child(13n+11):hover,
+section h1:nth-child(13n+12):hover,
+section h2:nth-child(13n+13):hover,
+section h3:nth-child(13n+14):hover,
+section h4:nth-child(13n+15):hover,
+section h5:nth-child(13n+16):hover,
+section h6:nth-child(13n+17):hover {
     animation-name: bob;
 }
 
 section div:nth-child(13n+9):hover,
-section ul li:nth-child(13n+9):hover,
-section span:nth-child(13n+9):hover,
-section p:nth-child(13n+9):hover,
-section h1:nth-child(13n+9):hover,
-section h2:nth-child(13n+9):hover,
-section h3:nth-child(13n+9):hover,
-section h4:nth-child(13n+9):hover,
-section h5:nth-child(13n+9):hover,
-section h6:nth-child(13n+9):hover {
+section ul li:nth-child(13n+10):hover,
+section span:nth-child(13n+11):hover,
+section p:nth-child(13n+12):hover,
+section h1:nth-child(13n+13):hover,
+section h2:nth-child(13n+14):hover,
+section h3:nth-child(13n+15):hover,
+section h4:nth-child(13n+16):hover,
+section h5:nth-child(13n+17):hover,
+section h6:nth-child(13n+18):hover {
     animation-name: skew;
 }
 
 section div:nth-child(13n+10):hover,
-section ul li:nth-child(13n+10):hover,
-section span:nth-child(13n+10):hover,
-section p:nth-child(13n+10):hover,
-section h1:nth-child(13n+10):hover,
-section h2:nth-child(13n+10):hover,
-section h3:nth-child(13n+10):hover,
-section h4:nth-child(13n+10):hover,
-section h5:nth-child(13n+10):hover,
-section h6:nth-child(13n+10):hover {
+section ul li:nth-child(13n+11):hover,
+section span:nth-child(13n+12):hover,
+section p:nth-child(13n+13):hover,
+section h1:nth-child(13n+14):hover,
+section h2:nth-child(13n+15):hover,
+section h3:nth-child(13n+16):hover,
+section h4:nth-child(13n+17):hover,
+section h5:nth-child(13n+18):hover,
+section h6:nth-child(13n+19):hover {
     animation-name: rotate;
 }
 
 section div:nth-child(13n+11):hover,
-section ul li:nth-child(13n+11):hover,
-section span:nth-child(13n+11):hover,
-section p:nth-child(13n+11):hover,
-section h1:nth-child(13n+11):hover,
-section h2:nth-child(13n+11):hover,
-section h3:nth-child(13n+11):hover,
-section h4:nth-child(13n+11):hover,
-section h5:nth-child(13n+11):hover,
-section h6:nth-child(13n+11):hover {
+section ul li:nth-child(13n+12):hover,
+section span:nth-child(13n+13):hover,
+section p:nth-child(13n+14):hover,
+section h1:nth-child(13n+15):hover,
+section h2:nth-child(13n+16):hover,
+section h3:nth-child(13n+17):hover,
+section h4:nth-child(13n+18):hover,
+section h5:nth-child(13n+19):hover,
+section h6:nth-child(13n+20):hover {
     animation-name: jello;
 }
 
 section div:nth-child(13n+12):hover,
-section ul li:nth-child(13n+12):hover,
-section span:nth-child(13n+12):hover,
-section p:nth-child(13n+12):hover,
-section h1:nth-child(13n+12):hover,
-section h2:nth-child(13n+12):hover,
-section h3:nth-child(13n+12):hover,
-section h4:nth-child(13n+12):hover,
-section h5:nth-child(13n+12):hover,
-section h6:nth-child(13n+12):hover {
+section ul li:nth-child(13n+13):hover,
+section span:nth-child(13n+14):hover,
+section p:nth-child(13n+15):hover,
+section h1:nth-child(13n+16):hover,
+section h2:nth-child(13n+17):hover,
+section h3:nth-child(13n+18):hover,
+section h4:nth-child(13n+19):hover,
+section h5:nth-child(13n+20):hover,
+section h6:nth-child(13n+21):hover {
     animation-name: wobble;
 }
 
-section ul li:nth-child(5n+0):hover,
-section span:nth-child(5n+0):hover,
-section p:nth-child(5n+0):hover,
-section h1:nth-child(5n+0):hover,
-section h2:nth-child(5n+0):hover,
-section h3:nth-child(5n+0):hover,
-section h4:nth-child(5n+0):hover,
-section h5:nth-child(5n+0):hover,
-section h6:nth-child(5n+0):hover {
+section ul li:nth-child(17n+0):hover,
+section span:nth-child(17n+1):hover,
+section p:nth-child(17n+2):hover,
+section h1:nth-child(17n+3):hover,
+section h2:nth-child(17n+4):hover,
+section h3:nth-child(17n+5):hover,
+section h4:nth-child(17n+6):hover,
+section h5:nth-child(17n+7):hover,
+section h6:nth-child(17n+8):hover {
     font-family: 'Crazy', sans-serif;
 }
 
-section ul li:nth-child(5n+1):hover,
-section span:nth-child(5n+1):hover,
-section p:nth-child(5n+1):hover,
-section h1:nth-child(5n+1):hover,
-section h2:nth-child(5n+1):hover,
-section h3:nth-child(5n+1):hover,
-section h4:nth-child(5n+1):hover,
-section h5:nth-child(5n+1):hover,
-section h6:nth-child(5n+1):hover {
+section ul li:nth-child(17n+1):hover,
+section span:nth-child(17n+2):hover,
+section p:nth-child(17n+3):hover,
+section h1:nth-child(17n+4):hover,
+section h2:nth-child(17n+5):hover,
+section h3:nth-child(17n+6):hover,
+section h4:nth-child(17n+7):hover,
+section h5:nth-child(17n+8):hover,
+section h6:nth-child(17n+9):hover {
     font-family: 'Happy-Dance', sans-serif;
 }
 
-section ul li:nth-child(5n+2):hover,
-section span:nth-child(5n+2):hover,
-section p:nth-child(5n+2):hover,
-section h1:nth-child(5n+2):hover,
-section h2:nth-child(5n+2):hover,
-section h3:nth-child(5n+2):hover,
-section h4:nth-child(5n+2):hover,
-section h5:nth-child(5n+2):hover,
-section h6:nth-child(5n+2):hover {
+section ul li:nth-child(17n+2):hover,
+section span:nth-child(17n+3):hover,
+section p:nth-child(17n+4):hover,
+section h1:nth-child(17n+5):hover,
+section h2:nth-child(17n+6):hover,
+section h3:nth-child(17n+7):hover,
+section h4:nth-child(17n+8):hover,
+section h5:nth-child(17n+9):hover,
+section h6:nth-child(17n+10):hover {
     font-family: 'Barthez', sans-serif;
 }
 
-section ul li:nth-child(5n+3):hover,
-section span:nth-child(5n+3):hover,
-section p:nth-child(5n+3):hover,
-section h1:nth-child(5n+3):hover,
-section h2:nth-child(5n+3):hover,
-section h3:nth-child(5n+3):hover,
-section h4:nth-child(5n+3):hover,
-section h5:nth-child(5n+3):hover,
-section h6:nth-child(5n+3):hover {
+section ul li:nth-child(17n+3):hover,
+section span:nth-child(17n+4):hover,
+section p:nth-child(17n+5):hover,
+section h1:nth-child(17n+6):hover,
+section h2:nth-child(17n+7):hover,
+section h3:nth-child(17n+8):hover,
+section h4:nth-child(17n+9):hover,
+section h5:nth-child(17n+10):hover,
+section h6:nth-child(17n+11):hover {
     font-family: 'MKBats', sans-serif;
 }
 
-section ul li:nth-child(5n+4):hover,
-section span:nth-child(5n+4):hover,
-section p:nth-child(5n+4):hover,
-section h1:nth-child(5n+4):hover,
-section h2:nth-child(5n+4):hover,
-section h3:nth-child(5n+4):hover,
-section h4:nth-child(5n+4):hover,
-section h5:nth-child(5n+4):hover,
-section h6:nth-child(5n+4):hover {
+section ul li:nth-child(17n+4):hover,
+section span:nth-child(17n+5):hover,
+section p:nth-child(17n+6):hover,
+section h1:nth-child(17n+7):hover,
+section h2:nth-child(17n+8):hover,
+section h3:nth-child(17n+9):hover,
+section h4:nth-child(17n+10):hover,
+section h5:nth-child(17n+11):hover,
+section h6:nth-child(17n+12):hover {
     font-family: 'Hacked CRT', sans-serif;
+}
+
+section ul li:nth-child(17n+5):hover,
+section span:nth-child(17n+6):hover,
+section p:nth-child(17n+7):hover,
+section h1:nth-child(17n+8):hover,
+section h2:nth-child(17n+9):hover,
+section h3:nth-child(17n+10):hover,
+section h4:nth-child(17n+11):hover,
+section h5:nth-child(17n+12):hover,
+section h6:nth-child(17n+13):hover {
     font-family: 'Mercy Christole', sans-serif;
+}
+
+section ul li:nth-child(17n+6):hover,
+section span:nth-child(17n+7):hover,
+section p:nth-child(17n+8):hover,
+section h1:nth-child(17n+9):hover,
+section h2:nth-child(17n+10):hover,
+section h3:nth-child(17n+11):hover,
+section h4:nth-child(17n+12):hover,
+section h5:nth-child(17n+13):hover,
+section h6:nth-child(17n+14):hover {
     font-family: 'e Escotia Script', sans-serif;
+}
+
+section ul li:nth-child(17n+7):hover,
+section span:nth-child(17n+8):hover,
+section p:nth-child(17n+9):hover,
+section h1:nth-child(17n+10):hover,
+section h2:nth-child(17n+11):hover,
+section h3:nth-child(17n+12):hover,
+section h4:nth-child(17n+13):hover,
+section h5:nth-child(17n+14):hover,
+section h6:nth-child(17n+15):hover {
     font-family: 'Rai Bethes', sans-serif;
+}
+
+section ul li:nth-child(17n+8):hover,
+section span:nth-child(17n+9):hover,
+section p:nth-child(17n+10):hover,
+section h1:nth-child(17n+11):hover,
+section h2:nth-child(17n+12):hover,
+section h3:nth-child(17n+13):hover,
+section h4:nth-child(17n+14):hover,
+section h5:nth-child(17n+15):hover,
+section h6:nth-child(17n+16):hover {
     font-family: 'Unicorn Magic', sans-serif;
+}
+
+section ul li:nth-child(17n+9):hover,
+section span:nth-child(17n+10):hover,
+section p:nth-child(17n+11):hover,
+section h1:nth-child(17n+12):hover,
+section h2:nth-child(17n+13):hover,
+section h3:nth-child(17n+14):hover,
+section h4:nth-child(17n+15):hover,
+section h5:nth-child(17n+16):hover,
+section h6:nth-child(17n+17):hover {
     font-family: 'Lemon Fresh', sans-serif;
+}
+
+section ul li:nth-child(17n+10):hover,
+section span:nth-child(17n+11):hover,
+section p:nth-child(17n+12):hover,
+section h1:nth-child(17n+13):hover,
+section h2:nth-child(17n+14):hover,
+section h3:nth-child(17n+15):hover,
+section h4:nth-child(17n+16):hover,
+section h5:nth-child(17n+17):hover,
+section h6:nth-child(17n+18):hover {
     font-family: 'Swissmade', sans-serif;
+}
+
+section ul li:nth-child(17n+11):hover,
+section span:nth-child(17n+12):hover,
+section p:nth-child(17n+13):hover,
+section h1:nth-child(17n+14):hover,
+section h2:nth-child(17n+15):hover,
+section h3:nth-child(17n+16):hover,
+section h4:nth-child(17n+17):hover,
+section h5:nth-child(17n+18):hover,
+section h6:nth-child(17n+19):hover {
     font-family: 'Ten Million Fireflies', sans-serif;
+}
+
+section ul li:nth-child(17n+12):hover,
+section span:nth-child(17n+13):hover,
+section p:nth-child(17n+14):hover,
+section h1:nth-child(17n+15):hover,
+section h2:nth-child(17n+16):hover,
+section h3:nth-child(17n+17):hover,
+section h4:nth-child(17n+18):hover,
+section h5:nth-child(17n+19):hover,
+section h6:nth-child(17n+20):hover {
     font-family: 'Mister Brush', sans-serif;
+}
+
+section ul li:nth-child(17n+13):hover,
+section span:nth-child(17n+14):hover,
+section p:nth-child(17n+15):hover,
+section h1:nth-child(17n+16):hover,
+section h2:nth-child(17n+17):hover,
+section h3:nth-child(17n+18):hover,
+section h4:nth-child(17n+19):hover,
+section h5:nth-child(17n+20):hover,
+section h6:nth-child(17n+21):hover {
     font-family: 'HIGH LAMP', sans-serif;
+}
+
+section ul li:nth-child(17n+14):hover,
+section span:nth-child(17n+15):hover,
+section p:nth-child(17n+16):hover,
+section h1:nth-child(17n+17):hover,
+section h2:nth-child(17n+18):hover,
+section h3:nth-child(17n+19):hover,
+section h4:nth-child(17n+20):hover,
+section h5:nth-child(17n+21):hover,
+section h6:nth-child(17n+22):hover {
     font-family: 'wickhop handwriting', sans-serif;
-    font-family: 'Dead Alive', sans-serif;
-    font-family: 'KetosagLt', sans-serif;
+}
+
+section ul li:nth-child(17n+15):hover,
+section span:nth-child(17n+16):hover,
+section p:nth-child(17n+17):hover,
+section h1:nth-child(17n+18):hover,
+section h2:nth-child(17n+19):hover,
+section h3:nth-child(17n+20):hover,
+section h4:nth-child(17n+21):hover,
+section h5:nth-child(17n+22):hover,
+section h6:nth-child(17n+23):hover {
     font-family: 'Minebold', sans-serif;
+}
+
+section ul li:nth-child(17n+16):hover,
+section span:nth-child(17n+17):hover,
+section p:nth-child(17n+18):hover,
+section h1:nth-child(17n+19):hover,
+section h2:nth-child(17n+20):hover,
+section h3:nth-child(17n+21):hover,
+section h4:nth-child(17n+22):hover,
+section h5:nth-child(17n+23):hover,
+section h6:nth-child(17n+24):hover {
+    font-family: 'KetosagLt', sans-serif;
+}
+
+section ul li:nth-child(17n+17):hover,
+section span:nth-child(17n+18):hover,
+section p:nth-child(17n+19):hover,
+section h1:nth-child(17n+20):hover,
+section h2:nth-child(17n+21):hover,
+section h3:nth-child(17n+22):hover,
+section h4:nth-child(17n+23):hover,
+section h5:nth-child(17n+24):hover,
+section h6:nth-child(17n+25):hover {
+    font-family: 'Dead Alive', sans-serif;
 }
 
